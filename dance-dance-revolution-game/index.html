@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dance Dance Revolution Game</title>
+    <link rel="stylesheet" href="src/css/style.css">
+</head>
+<body>
+    <div id="game-container">
+        <h1>Dance Dance Revolution</h1>
+        <div id="notes-container">
+            <!-- Notes will be rendered here -->
+        </div>
+        <div id="score-display">
+            <p>Score: <span id="score">0</span></p>
+        </div>
+    </div>
+    <script src="src/js/input.js"></script>
+    <script src="src/js/beatmap.js"></script>
+    <script src="src/js/game.js"></script>
+    <script>
+        // Initialize the game
+        startGame();
+    </script>
+</body>
+</html>

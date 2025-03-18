@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+
+#game-container {
+    position: relative;
+    width: 400px;
+    height: 600px;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+
+.arrow {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('../assets/images/arrow.png'); /* Placeholder for arrow image */
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.arrow-left {
+    transform: rotate(180deg);
+}
+
+.arrow-up {
+    transform: rotate(90deg);
+}
+
+.arrow-down {
+    transform: rotate(270deg);
+}
+
+.arrow-right {
+    transform: rotate(0deg);
+}
+
+.note {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    transition: transform 0.2s;
+}
+
+.long-note {
+    height: 100px; /* Example height for long notes */
+}
+
+.score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: #fff;
+    font-size: 24px;
+}
